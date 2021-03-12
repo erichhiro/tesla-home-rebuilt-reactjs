@@ -1,4 +1,4 @@
-.item{
+.item {
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -6,17 +6,18 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  scroll-snap-align: start;
 }
 
-.item_container{
-  width: 40vw;
+.item_container {
+  width: 70vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.item_text{
-  margin-top: 20%;
+.item_text {
+  margin-top: calc(16vh + 20px);
   display: flex;
   flex-direction: column;
   font-size: 34px;
@@ -25,24 +26,40 @@
   flex: 1;
 }
 
-.item_textDesc{
+.item_textDesc {
   font-weight: 100;
   font-size: 14px;
 }
 
-.item_lowerThird{
+.item_textDesc>p {
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.90;
+}
+
+.item_lowerThird {
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
 }
 
-.item_buttons{
+.item_buttons {
   display: flex;
+  margin-bottom: 70px;
 }
 
-.item_expand{
+.item_expand {
   color: white;
   width: 100%;
-  /* margin-top: 3%; */
+  margin-top: 3%;
+  margin-bottom: 5%;
   justify-content: center;
+  text-align: center;
+
+  margin-top: -70px;
+}
+ 
+.item_expand .MuiSvgIcon-root {
+  font-size: 4rem;
 }

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header_logo">
-        <img src={TeslaLogo} alt='Tesla Logo'/>
+        <img src={TeslaLogo} alt='Tesla Logo' title="Tesla, Inc."/>
       </div>
 
       <div className="header_center">
@@ -15,7 +15,7 @@ const Header = () => {
         <p>Model X</p>
         <p>Model Y</p>
         <p>Solar Roof</p>
-        <p>Solar Panel</p>
+        <p>Solar Panels</p>
       </div>
 
       <div className="header_right">
